@@ -219,11 +219,7 @@ $\Delta V = \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2
 
 This theorem can be proven with some multivariable calculus. Any local minimum or maximum of $V(x, y, z)$ that does not lie on the boundary must be a stationary point. These "stationary points" are where $\nabla V$ vanishes. However, not every "stationary point" is a minimum or maximum. Some are saddle points⁶. Saddle points are derived from a matrix of second derivatives evaluated at a stationary point, as shown below.
 
-$M = \begin{pmatrix}
-\frac{\partial^2 V}{\partial x \partial x} & \frac{\partial^2 V}{\partial x \partial y} & \frac{\partial^2 V}{\partial x \partial z} \\
-\frac{\partial^2 V}{\partial y \partial x} & \frac{\partial^2 V}{\partial y \partial y} & \frac{\partial^2 V}{\partial y \partial z} \\
-\frac{\partial^2 V}{\partial z \partial x} & \frac{\partial^2 V}{\partial z \partial y} & \frac{\partial^2 V}{\partial z \partial z}
-\end{pmatrix} \tag{33}$ &emsp;...&emsp; (33)
+<img src="/src/assets/Eq33.png" width="150">&emsp;...&emsp; (33)
 
 Since this matrix is a symmetric $3 \times 3$ matrix, it has 3 eigenvalues. Call these eigenvalues $M_1$, $M_2$, and $M_3$. If all three of these eigenvalues are positive, then the stationary point is a minimum. If all three eigenvalues are negative, then the stationary point is a maximum. If some eigenvalue(s) are positive while other(s) are negative, than the stationary point being evaluated is a saddle point. The eigenvalues are the sum of the diagonal elements, also referred to as the matrix's "trace"⁷, in matrix $M$ denoted in Eq. 33.
 
@@ -342,7 +338,7 @@ $\vec{B}_{switch} = \frac{\mu_0 \vec{I}}{4\pi} \frac{1}{x}\left(\frac{y}{\sqrt{y
 
 Being that the total magnetic field, $\vec{B}$, invokes the principle of superposition:
 
-$\vec{B}_{total}(I, x, y, L, W) = \vec{B}_{rail1} + \vec{B}_{rail2} + \vec{B}_{proj} + \vec{B}_{switch} \tag{50}$ &emsp;...&emsp; (50)
+<img src="/src/assets/Eq50.png" width="350">&emsp;...&emsp; (50)
 
 The total magnetic field, substituting Eq. 46 - 49 into Eq. 50, yields:
 
@@ -350,7 +346,7 @@ $\vec{B}_{total} = \frac{\mu_0 \vec{I}(t)}{4\pi}\left[\frac{\sqrt{x^2 + y^2}}{xy
 
 An analytical expression for the Lorentz Force exerted by the projectile is as shown below:
 
-$\vec{F}_B(I, L, W) = I(t) \int dy \times \vec{B}_{proj}(I, y, L, W) \tag{52}$ &emsp;...&emsp; (52)
+<img src="/src/assets/Eq52.png" width="350">&emsp;...&emsp; (52)
 
 Since the projectile does not produce any contribution to the B field passing through itself, this component of the expression for B can be ignored. Therefore, this term can be eliminated and evaluating at the projectile length, $x = L$:
 
