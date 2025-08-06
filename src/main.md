@@ -44,6 +44,8 @@ Levitation simply refers to the train car not making contact with the track. Thi
 
 **Figure 1: Maglev Levitation FBD**
 
+![Figure 1](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig1.png)
+
 Maglev trains can operate at such high speeds because unlike a traditional train, maglev trains hover above a train, allowing them to ignore the resistance of friction. Friction between rails of a train and a track, despite the materials used, can significantly decrease the speeds of trains. Since the train hovers above a track, the only resistive forces these maglev trains have to face is the resistive force of air resistance, a drag force. The effects of air resistance are further discussed in section 5. The actual physics and math behind the levitation of the train is discussed in section 2.
 
 #### 1.1.2 Introduction to Propulsion
@@ -52,9 +54,19 @@ A train would not be what it is without some form of propulsion. The train needs
 
 **Figure 2: EDS Maglev Propulsion**
 
+![Figure 2](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig2.png)
+
 Before all of this, however, the train car is given an initial velocity with wheels on the bottom of the car. These wheels then retract and electromagnetic propulsion takes place. These wheels are also used in case of emergencies. These wheels also assist in stopping the maglev train. A diagram of the EDS rail system is illustrated below. Again, the specific rail types will be discussed in the next section.
 
 **Figure 3: EDS Rail System**
+
+![Figure 3](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig3.png)
+
+As shown above, there are coils embedded within the side railings of the maglev system. Metal plates then cover the coils. These plates also serve as guidance rails. Parallel to the bottom of the train car lies the wheel support path. This is where the wheels are lodged, allowing for the train car to begin and end its journey. The same concept of alternating magnetic polarities can be used in a simplified maglev system by having the alternating current induced coils on the ground, under the train. This is illustrated below:
+
+**Figure 4: EDS Alternative Propulsion**
+
+![Figure 4](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig4.png)
 
 #### 1.1.3 Introduction to Guidance
 
@@ -73,6 +85,8 @@ The TransRapid railing system utilizes EMS technology. In this railing system, t
 The MLX railing system utilizes EDS technology. In this railing system, magnets on the train induce currents in the guiding rails. These currents create magnetic fields which interact with the original field of the magnets. Levitation is supported by the repulsive force between the two fields. The magnets on the train are either electromagnets or an array of permanent magnets. The advantage of EDS systems is that they are naturally stable at high speeds and thus no feedback control is needed unlike with the TransRapid System. However, EDS systems have a major disadvantage. The train must be equipped with wheels because at slow speeds the induced currents are not strong enough to support levitation.
 
 **Figure 5: TransRapid (EMS) vs MLX (EDS) Railing Systems**
+
+![Figure 5](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig5.png)
 
 ## 2. Magnetic Levitation
 
@@ -145,6 +159,8 @@ Where the work done is in joules. It is also important to note that this is very
 $W_L = \frac{LI^2}{2} \tag{18}$ &emsp;...&emsp; (18)
 
 **Figure 6: Coil Diagram**
+
+![Figure 6](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig6.png)
 
 $\frac{B^2}{2\mu_0} \sim \frac{LI^2}{2} \tag{19}$ &emsp;...&emsp; (19)
 
@@ -236,6 +252,8 @@ MLX train systems, involving pure diamagnetism, are used in all commercial train
 
 **Figure 7: Regular Conductor vs. Superconductor**
 
+![Figure 7](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig7.png)
+
 Superconductors expel all field lines, which allows for a constant magnetic field which counters Earnshaw's Theorem, which is known as the Meissner Effect. Regular conductors, such as regular electromagnets, become superconductors when they reach their critical temperature (or as close to it as possible). When this happens, two things occur:
 
 1. The electrical resistance of the material drops to zero
@@ -259,6 +277,8 @@ It is important to note that the rotor, denoted by the letter 'A', is the axle t
 
 **Figure 8: Different kinds of motors**
 
+![Figure 8](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig8.png)
+
 ### 3.2 Electromagnetic Propulsion
 
 The math and physics behind electromagnetic propulsion is difficult to analyze because it involves accounting for the speed at which the alternating current flows, delays when changing the polarity of the magnets beside the train to propel it forward, summing up the vertical component of the magnetic forces that propel the train forward, with air resistance being taken into account. All of this requires high caliber mathematical computing systems which, still, have significant inaccuracies. However, a model for a maglev train can be simplified with the model of a rail gun.
@@ -268,6 +288,8 @@ A railgun is a relatively simple device that uses the flow of current through a 
 Although railguns are in fact dangerous and primarily used in military and astronomical fields, the physics principles behind a railgun can be used to better explain a simplified magnetic levitation train model. A diagram of a railgun is shown on the next page.
 
 **Figure 9: Railgun Diagram**
+
+![Figure 9](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig9.png)
 
 For the sake of simplicity, the maglev train will be referred to as a "projectile" as if it were a small round material in a railgun setup. The force of the projectile will be determined first by finding the the instantaneous induced magnetic field at any point. This must be calculated as a function of the loop geometry and current sent through the parallel rails. This is given by the Biot-Savart Law, shown below as:
 
@@ -292,6 +314,8 @@ Since the electric field changes with time, as the projectile travels along the 
 A rectangular loop of dimension $L \times W$ with a current, $I$, running through it can be used to model the railgun. A diagram of this is shown below.
 
 **Figure 10: Biot-Savart Law Diagram**
+
+![Figure 10](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig10.png)
 
 It is important to note that the vectors $\vec{l}$ and $\vec{z}$ create a right triangle, whose hypotenuse, $h$, is shown by the equation below:
 
@@ -381,6 +405,8 @@ The guideway system depends on the track being examined. The MLX guidance system
 
 **Figure 11: Guideways for Different Rails**
 
+![Figure 11](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig11.png)
+
 Guiding the trains is pretty simple, but guiding it when there is a power failure or some other accident is much difficult. Even though the TransRapid maglev train system cannot derail because of the fact that it is wrapped around the track and the MLX maglev train system also cannot derail because it is "sitting" inside the track, other accidents still can happen. Luckily, each kind of train is equipped with a back-up in case there is no current being sent through the rails. The TransRapid system has a special material coated on the bottom with a coefficient of sliding friction of 0.1. This reduces frictional heat produced by the drag between the train and the rails. The train is produced with non combustible materials so an emergency skid is safe. There are also on-board batteries which assist the guidance and levitation magnets in providing an eddy braking current to gently stop the train so that it may cruise to a steady stop. The MLX maglev train system has wheels, as previously aforementioned which can be deployed to assist in stopping the train. As well as that, the MLX maglev train cars have permanent magnets underneath its chassis. These magnets, still in motion from the velocity of the train before it lost power, can set up a current (along with the train's back-up batteries) which is repelled by the permanent magnet.
 
 Overall, magnetic levitation trains are a very safe and fast means of transportation that are easily comparable to air travel and other high speed forms of train travel.
@@ -390,6 +416,8 @@ Overall, magnetic levitation trains are a very safe and fast means of transporta
 Maglev trains are undeniably fast due to the fact that they don't have a frictional force between the train and its tracks slowing it down. However, maglev trains, much like all other earth vehicles, are limited by air resistance. Air resistance is a drag force that affects objects as they move through the air. Air resistance is a second order differential equation dependent on an objects velocity, among other things. A free body diagram of the horizontal motion of the train car is shown below.
 
 **Figure 12: Maglev Horizontal FBD**
+
+![Figure 12](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig12.png)
 
 An equation of motion can then be set up using Newton's Second Law of Motion. This assuming that the magnetic field propels the train car to give is positive acceleration.
 
@@ -441,6 +469,8 @@ $B = \mu_0 n I \tag{67}$ &emsp;...&emsp; (67)
 $I$ is the current flowing through the solenoid, $n$ is the number of turns in the solenoid, and $\mu_0$ is the vacuum permeability of free space (also known as the magnetic constant). Contact from the battery with magnets to the conductive material of the solenoid allow for a current from the battery to pass through the solenoid. A circuit is formed just in the vicinity of the battery. The two magnets are automatically at the ends of the generated magnetic field, where the field is divergent, so a force is exerted on the magnets. This results in constant motion. A diagram of this is shown below:
 
 **Figure 13: Magnetic Field Inside Solenoid**
+
+![Figure 13](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/assets/Fig13.png)
 
 Unfortunately, this isn't a realistic representation of the Hyperloop because the "capsule" is in contact with the "tube". This, in real life, would lead to uncomfortable travel. And at over 1000 km/h, this can lead to death.
 
