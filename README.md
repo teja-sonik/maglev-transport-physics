@@ -7,7 +7,7 @@
 This repository contains a comprehensive mathematical analysis of magnetic levitation transportation systems that I originally wrote in 2017. Looking to dust off and stretch my mathematical foundations after years focused on applied work, I've revisited this analysis to :
 
 - **Identify and correct mathematical errors** via detailed review
-- **Reconstruct the complete LaTeX source** from the original PDF
+- **Reconstruct the complete LaTeX source** from the original PDF to Markdown
 - **Document my learning process** of applying mathematical scrutiny to past work
 - **Demonstrate analytical thinking** relevant to quantitative roles
 
