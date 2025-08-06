@@ -4,7 +4,7 @@
 *Originally Written : May 31, 2017*\
 *Revisited : July 23, 2025*
 
-[View the original LaTeX PDF here](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/ApPhysicsCFinalReport.pdf)
+[View the original LaTeX PDF here](/src/ApPhysicsCFinalReport.pdf)
 
 ## Abstract
 
