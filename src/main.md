@@ -33,7 +33,7 @@ The main drawback of the maglev system is how much time, money, and effort is ne
 
 ### 1.1 The Magnetic Levitation Train
 
-Magnetic Levitation (or "maglev", derived from magnetic levitation) is essentially a train that operates via the science of electromagnetism. Magnetic levitation trains are what they are due to three core principles:
+Magnetic Levitation (or "maglev", derived from **mag**netic **lev**itation) is essentially a train that operates via the science of electromagnetism. Magnetic levitation trains are what they are due to three core principles:
 
 • **Levitation**  
 • **Propulsion**  
@@ -54,7 +54,7 @@ Maglev trains can operate at such high speeds because unlike a traditional train
 
 #### 1.1.2 Introduction to Propulsion
 
-A train would not be what it is without some form of propulsion. The train needs to get from one place to another. There are a few ways how magnetic levitation trains can propel forward (or reverse - the same premise can be applied to slow the train down - known as magnetic braking). Maglev train systems, such as the ones in Japan, utilizing electrodynamic suspension, propel forward is using magnets on the side rails whose polarities are switched using an alternating current. Essentially, there are coils on the sides of the maglev train rails and magnets on the side of the train car. The magnets on the train car alternate in polarity. These coils have a current running through them, inducing an alternating polarity when the coils experience the changing magnetic field. These polarized coils then act as magnets due to the fact that a magnetic field is created. These coils react to the magnets on the sides of the trains. This illustrates the concept of propulsion in the electrodynamics suspension system (EDS - further discussed in the next section). These magnets in the side railing system alternate in polarity. The magnets on the train are then attracted to the magnets in front of them, and repelled from the magnets of opposite polarity behind them. As the train moves forward, towards the magnets it is attracted to (of opposite polarity) and away from the magnets it repels (of the same polarity), the magnets that the train car is attracted to is behind the car. To avoid an oscillating cycle of the car moving back and forth, an alternating current is then used to reverse the magnetic polarity of the coils on the side rails. The train can then continually be attracted to the magnets on the side of the rail in front of the car, thereby resulting in electromagnetic propulsion.
+A train would not be what it is without some form of propulsion. The train needs to get from one place to another. There are a few ways how magnetic levitation trains can propel forward (or reverse - the same premise can be applied to slow the train down - known as magnetic braking). Maglev train systems, such as the ones in Japan, utilizing electrodynamic suspension, propel forward is using magnets on the side rails whose polarities are switched using an alternating current. Essentially, there are coils on the sides of the maglev train rails and magnets on the side of the train car. The magnets on the train car alternate in polarity. These coils have a current running through them, inducing an alternating polarity when the coils experience the changing magnetic field. These polarized coils then act as magnets due to the fact that a magnetic field is created. These coils react to the magnets on the sides of the trains. This illustrates the concept of propulsion in the electrodynamics suspension system (EDS - further discussed in the next section). These magnets in the side railing system alternate in polarity. The magnets on the train are then attracted to the magnets in front of them, and repelled from the magnets of opposite polarity behind them. As the train moves forward, towards the magnets it is attracted to (of opposite polarity) and away from the magnets it repels (of the same polarity), the magnets that the train car is attracted to is behind the car. To avoid an oscillating cycle of the car moving back and forth, an alternating current is then used to reverse the magnetic polarity of the coils on the side rails. The train can then continually be attracted to the magnets on the side of the rail in front of the car, thereby resulting in electromagnetic propulsion. This is illustrated in the figure below.
 
 **Figure 2: EDS Maglev Propulsion**
 
@@ -86,7 +86,11 @@ The TransRapid railing system utilizes EMS technology. In this railing system, t
 
 #### 1.2.2 MLX Rail Systems
 
-The MLX railing system utilizes EDS technology. In this railing system, magnets on the train induce currents in the guiding rails. These currents create magnetic fields which interact with the original field of the magnets. Levitation is supported by the repulsive force between the two fields. The magnets on the train are either electromagnets or an array of permanent magnets. The advantage of EDS systems is that they are naturally stable at high speeds and thus no feedback control is needed unlike with the TransRapid System. However, EDS systems have a major disadvantage. The train must be equipped with wheels because at slow speeds the induced currents are not strong enough to support levitation.
+The MLX railing system utilizes EDS technology. In this railing system, magnets on the train induce currents in the guiding rails. These currents create magnetic fields which interact with the original field of the magnets. Levitation is supported by the repulsive force between the two fields. The magnets on the train are either electromagnets or an array of permanent magnets. The advantage of EDS systems is that they are naturally stable at high speeds and thus no feedback control is needed unlike with the TransRapid System. However, EDS systems have a major disadvantage. The train must be equipped with wheels because at slow speeds the induced currents are not strong enough to support levitation. This is shown
+in Fig. 3.
+
+The difference between the TransRapid, utilizing EMS, and the MLX, utilizing EDS, railing
+systems is shown graphically below:
 
 **Figure 5: TransRapid (EMS) vs MLX (EDS) Railing Systems**
 
@@ -94,7 +98,7 @@ The MLX railing system utilizes EDS technology. In this railing system, magnets 
 
 ## 2. Magnetic Levitation
 
-A magnetic levitation train would not be what it is without levitating. After all, it is levitation and its removal of friction that allow it to reach some of its high speeds comparable to aircraft transportation. Although the two different railing systems utilize magnetism in different ways to achieve the "levitation" effect, they operate on similar premises. A TransRapid EMS system utilizes the law of attraction whereas an MLX EDS system uses the law of repulsion to "levitate" the maglev train car. Due to the fact that the TransRapid maglev system has a lot of fringing², calculating lift force for it would be extremely complicated. Hence, the lift force for the MLX EDS maglev train system will be calculated instead, using a simplified model due to the fact that fringing still occurs with the EDS railing system at the edges of the train car and track.
+A magnetic *levitation* train would not be what it is without levitating. After all, it is levitation and its removal of friction that allow it to reach some of its high speeds comparable to aircraft transportation. Although the two different railing systems utilize magnetism in different ways to achieve the "levitation" effect, they operate on similar premises. A TransRapid EMS system utilizes the law of attraction whereas an MLX EDS system uses the law of repulsion to "levitate" the maglev train car. Due to the fact that the TransRapid maglev system has a lot of fringing², calculating lift force for it would be extremely complicated. Hence, the lift force for the MLX EDS maglev train system will be calculated instead, using a simplified model due to the fact that fringing still occurs with the EDS railing system at the edges of the train car and track.
 
 ### 2.1 Overcoming the Force of Gravity
 
@@ -162,19 +166,21 @@ Where the work done is in joules. It is also important to note that this is very
 
 $W_L = \frac{LI^2}{2} \tag{18}$ &emsp;...&emsp; (18)
 
+$\frac{B^2}{2\mu_0} \sim \frac{LI^2}{2} \tag{19}$ &emsp;...&emsp; (19)
+
+Let's have the coil be on the bottom of the train, on the track, while the maglev train car is hovering above the coil by a gap distance, $g$, while having a cross sectional area, $A$. The relationship between voltage and the field energy will be used to obtain the force exerted by the coil onto the maglev train car. The fact that the force is the derivative of work with respect to the distance traveled by the force will also be used. The diagram of the coil, the maglev train car, and respective variables used are illustrated in the diagram below.
+
+
 **Figure 6: Coil Diagram**
 
 <img src="/src/assets/Fig6.png" width="350">
 
-$\frac{B^2}{2\mu_0} \sim \frac{LI^2}{2} \tag{19}$ &emsp;...&emsp; (19)
-
-Let's have the coil be on the bottom of the train, on the track, while the maglev train car is hovering above the coil by a gap distance, $g$, while having a cross sectional area, $A$. The relationship between voltage and the field energy will be used to obtain the force exerted by the coil onto the maglev train car. The fact that the force is the derivative of work with respect to the distance traveled by the force will also be used. The diagram of the coil, the maglev train car, and respective variables used are illustrated in the diagram below.
 
 Eq. 17 gives the relationship for the energy density. It will be assumed that the magnetic field inside of the air gap is uniform. This means that the total field energy will be attained by multiplying the field density by the volume of the field.
 
 $V = g \cdot A \tag{20}$ &emsp;...&emsp; (20)
 
-It is important to note that $V$ is not the voltage, but rather it is the volume of the gap area between the coil and the maglev train.
+It is important to note that $V$ is **not** the voltage, but rather it is the volume of the gap area between the coil and the maglev train.
 
 $W_d = \frac{B^2}{2\mu_0} \tag{17 \text{ revisited}}$ &emsp;...&emsp; (17) revisited
 
@@ -273,11 +279,14 @@ This directly ties into linear induction motors and linear synchronous motors. T
 2. Uni-rolling Rotary Motor
 3. Linear Motor
 
-It is important to note that the rotor, denoted by the letter 'A', is the axle that rotates and the stator, denoted by the letter 'B', is the part of the motor that stays stationary and typically causes the rotor to rotate. The linear induction motor (or a linear synchronous motor - LSM - since there are independent magnets placed along the track) uses an induced current to produce motion. The rotor is the axle attached to wheels under the maglev train whereas the stator is the track underneath it which contains the wheel support path (refer to Fig. 3). The stator has a current running through it and this generates a magnetic field that travels down its length, increasing as the rotor travels farther downwards. This causes an acceleration, which quickly brings the maglev train to its own "takeoff" velocity. However, this motor can only produce a force while the rotor is above the stator. Once the rotor has reached the end of the stator, it stops moving. At this point, though, it becomes irrelevant because the wheels will have already been retracted due to the fact that the train is levitating above the track. The wheel support rails still remain under the train for emergency purposes for when wheels are needed in a surprise landing.
 
 **Figure 8: Different kinds of motors**
 
 <img src="/src/assets/Fig8.png" width="550">
+
+
+It is important to note that the rotor, denoted by the letter 'A', is the axle that rotates and the stator, denoted by the letter 'B', is the part of the motor that stays stationary and typically causes the rotor to rotate. The linear induction motor (or a linear synchronous motor - LSM - since there are independent magnets placed along the track) uses an induced current to produce motion. The rotor is the axle attached to wheels under the maglev train whereas the stator is the track underneath it which contains the wheel support path (refer to Fig. 3). The stator has a current running through it and this generates a magnetic field that travels down its length, increasing as the rotor travels farther downwards. This causes an acceleration, which quickly brings the maglev train to its own "takeoff" velocity. However, this motor can only produce a force while the rotor is above the stator. Once the rotor has reached the end of the stator, it stops moving. At this point, though, it becomes irrelevant because the wheels will have already been retracted due to the fact that the train is levitating above the track. The wheel support rails still remain under the train for emergency purposes for when wheels are needed in a surprise landing.
+
 
 ### 3.2 Electromagnetic Propulsion
 
@@ -476,7 +485,7 @@ Unfortunately, this isn't a realistic representation of the Hyperloop because th
 
 ## 7. Conclusion
 
-For now, however, this simple electric train is enough to demonstrate the concept of what a Hyperloop is supposed to do. Regardless, the magnetic levitation train and other forms of transportation are emerging rapidly and becoming popular by using recent discoveries in physical phenomena to propel humanity into the future of travel.
+For now, however, this simple electric train is enough to demonstrate the concept of what a Hyperloop is supposed to do. Regardless, the magnetic levitation train and other forms of transportation are emerging rapidly and becoming popular by using recent discoveries in physical phenomena to *propel* humanity into the future of travel.
 
 ## 8. Sources
 
