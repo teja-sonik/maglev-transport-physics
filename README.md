@@ -2,6 +2,10 @@
 
 *A 2017 physics report polished, error-corrected, and digitized for showcase*
 
+[Here's the *revised* report in MarkDown](/src/main.md)
+
+[Here's the *original* report in LaTeX PDF](/src/ApPhysicsCFinalReport.pdf)
+
 ## Overview
 
 This repository contains a comprehensive mathematical analysis of magnetic levitation transportation systems that I originally wrote in 2017. Looking to dust off and stretch my mathematical foundations after years focused on applied work, I've revisited this analysis to :
