@@ -1,7 +1,10 @@
 # Magnetic Levitation Transportation
 
 **Sriteja Sonikar**  
-*May 31, 2017*
+*Originally Written : May 31, 2017*\
+*Revisited : July 23, 2025*
+
+[View the original LaTeX PDF here](https://github.com/teja-sonik/maglev-transport-physics/blob/main/src/ApPhysicsCFinalReport.pdf)
 
 ## Abstract
 
